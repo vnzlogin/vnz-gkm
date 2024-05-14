@@ -33,6 +33,8 @@ gkm.on('key.*', function(data) {
 gkm.on('mouse.*', function(data) {
 	console.log(this.event + ' ' + data);
 });
+//stop listener
+vnz_gkm.events.removeAllListeners('key.*')
 ```
 
 ## License
