@@ -1,0 +1,30 @@
+{
+  "name": "vnz-gkm",
+  "version": "0.2.0",
+  "description": "Global Keyboard and Mouse listener",
+  "keywords": [
+    "global",
+    "keyboard",
+    "mouse"
+  ],
+  "main": "gkm",
+  "author": "Vnzlogin <support@vnzlogin.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/vnzlogin/vnz-gkm",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vnzlogin/vnz-gkm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vnzlogin/vnz-gkm/issues"
+  },
+  "dependencies": {
+    "eventemitter2": "~0.4.13"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
