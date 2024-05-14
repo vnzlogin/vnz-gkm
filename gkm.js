@@ -9,6 +9,7 @@ var spawn = require('child_process').spawn;
 var vnz = {
 	gkmPathDefault: path.join(__dirname, 'lib/gkm.jar'),
 	gkmPath: '',
+	events,
 	start() {
 		var events = new EventEmitter2({wildcard: true});
 		var gkm = spawn('java', ['-jar', this.gkmPath ? this.gkmPath : this.gkmPathDefault]);
@@ -19,6 +20,7 @@ var vnz = {
 				events.emit(parts[0], parts.slice(1));
 			}
 		});
+		this.events = events
 		return events
 	}
 }
