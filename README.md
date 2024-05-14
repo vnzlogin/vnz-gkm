@@ -23,6 +23,7 @@ Then require the package in your code:
 
 ```javascript
 var vnz_gkm = require('vnz-gkm');
+vnz_gkm.gkmPath = ... //replace jar path (optional)
 var gkm = vnz_gkm.start()
 // Listen to all key events (pressed, released, typed)
 gkm.on('key.*', function(data) {
