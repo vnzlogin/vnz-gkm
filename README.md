@@ -22,15 +22,15 @@ Install vnz-gkm via node.js package manager:
 Then require the package in your code:
 
 ```javascript
-var gkm = require('vnz-gkm');
-
+var vnz_gkm = require('vnz-gkm');
+var gkm = vnz_gkm.start()
 // Listen to all key events (pressed, released, typed)
-gkm.events.on('key.*', function(data) {
+gkm.on('key.*', function(data) {
     console.log(this.event + ' ' + data);
 });
 
 // Listen to all mouse events (click, pressed, released, moved, dragged)
-gkm.events.on('mouse.*', function(data) {
+gkm.on('mouse.*', function(data) {
 	console.log(this.event + ' ' + data);
 });
 ```
